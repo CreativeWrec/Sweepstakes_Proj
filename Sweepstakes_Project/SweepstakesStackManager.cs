@@ -9,13 +9,14 @@ namespace Sweepstakes_Project
     class SweepstakesStackManager
     {
         private Stack<Sweepstakes> stack;
-    }
-    public void InsertSweepstakes(Sweepstakes sweepstakes)
-    {
+        public void InsertSweepstakes(Sweepstakes sweepstakes)
+        {
 
-    }
-    public Sweepstakes GetSweepstakes()
-    {
+        }
+        public Sweepstakes GetSweepstakes()
+        {
 
+        }
     }
+    
 }
