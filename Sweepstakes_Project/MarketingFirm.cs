@@ -12,12 +12,12 @@ namespace Sweepstakes_Project
 
         public MarketingFirm(ISweepstakesManager manager)
         {
-
+            this._manager = manager;
         }
 
         public void CreateSweepstakes()
         {
-
+            _manager.InsertSweepstakes()
         }
 
     }

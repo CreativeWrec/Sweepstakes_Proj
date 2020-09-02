@@ -8,17 +8,18 @@ namespace Sweepstakes_Project
 {
     class Sweepstakes
     {
-        private Dictionary<int Contestant> contestant;
+        private Dictionary<int, Contestant> contestants;
         private string name;
         public string Name;
 
         public Sweepstakes(string name)
         {
-
+            contestants = new Dictionary<int, Contestant>();
+            name = Name;
         }
-        public RegisterContestant(Contestant contestant)
+        public void RegisterContestant(Contestant contestant)
         {
-
+            contestants.Add(contestant.RegistrationNumber, contestant);
         }
         public Contestant PickWinner()
         {
@@ -26,7 +27,10 @@ namespace Sweepstakes_Project
         }
         public void PrintContestantInfo(Contestant contestant)
         {
-
+            Console.WriteLine($"Reistration Number: {contestant.RegistrationNumber}" );
+            Console.WriteLine($"First Name {contestant.FirstName}");
+            Console.WriteLine($"Last Name {contestant.LastName}");
+            Console.WriteLine($"Email {contestant.EmailAddress}");
         }
 
     }
